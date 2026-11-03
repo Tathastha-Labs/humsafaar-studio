@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Humsafaar Studio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Analytics are not loaded. The UI still calls gtag(), so keep a no-op. -->
+  <script>
+    window.dataLayer = [];
+    window.gtag = function () {};
+  </script>
+
+  <!---->
+  <!-- <script crossOrigin="anonymous" src="//unpkg.com/react-scan/dist/auto.global.js"></script> -->
+
+  <base href="/" />
+  <link rel="icon" type="image/svg+xml" href="/humsafar-icon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@300..800&display=swap"
+    rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="/src/styles.css" /> -->
+</head>
+
+<body className="overflow-hidden bg-ui-background">
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
+</body>
+
+</html>

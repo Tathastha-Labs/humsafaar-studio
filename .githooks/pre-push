@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Scans every commit about to be pushed, in case a commit skipped the pre-commit check.
+root=$(git rev-parse --show-toplevel)
+zero=0000000000000000000000000000000000000000
+while read -r _local_ref local_sha _remote_ref remote_sha; do
+  [ "$local_sha" = "$zero" ] && continue
+  if [ "$remote_sha" = "$zero" ]; then range="$local_sha"; else range="$remote_sha..$local_sha"; fi
+  "$root/script/check_secrets.sh" range "$range" || exit 1
+done

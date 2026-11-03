@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="48 54 144 156" role="img" aria-label="Humsafar Studio">
+  <title>Humsafar Studio</title>
+  <rect x="55" y="92" width="36" height="112" rx="18" fill="#FF9933"/>
+  <circle cx="73" cy="78" r="20" fill="#FF9933"/>
+  <rect x="149" y="92" width="36" height="112" rx="18" fill="#FF9933"/>
+  <circle cx="167" cy="78" r="20" fill="#FF9933"/>
+  <path d="M 120 124 L 125 142 L 143 148 L 125 154 L 120 172 L 115 154 L 97 148 L 115 142 Z" fill="#FFD15C"/>
+</svg>

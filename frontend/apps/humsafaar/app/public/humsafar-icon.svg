@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="HumsafaarAI app icon, dark">
+  <title>HumsafaarAI — App icon (dark)</title>
+  <desc>Rounded-square app icon: deep indigo background, saffron companion figures, gold spark.</desc>
+
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="#0D0B2E"/>
+  <circle cx="256" cy="276" r="180" fill="#FF9933" opacity="0.08"/>
+
+  <g transform="translate(58, 60) scale(1.65)">
+    <rect x="55" y="92" width="36" height="112" rx="18" fill="#FF9933"/>
+    <circle cx="73" cy="78" r="20" fill="#FF9933"/>
+    <rect x="149" y="92" width="36" height="112" rx="18" fill="#FF9933"/>
+    <circle cx="167" cy="78" r="20" fill="#FF9933"/>
+    <path d="M 120 124 L 125 142 L 143 148 L 125 154 L 120 172 L 115 154 L 97 148 L 115 142 Z" fill="#FFD15C"/>
+  </g>
+</svg>

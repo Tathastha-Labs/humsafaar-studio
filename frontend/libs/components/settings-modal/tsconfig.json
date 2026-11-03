@@ -1,0 +1,64 @@
+{
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "../keybinds"
+    },
+    {
+      "path": "../../tauri-utils"
+    },
+    {
+      "path": "../../model-list"
+    },
+    {
+      "path": "../popover"
+    },
+    {
+      "path": "../promptbox"
+    },
+    {
+      "path": "../switch"
+    },
+    {
+      "path": "../select"
+    },
+    {
+      "path": "../../soundboard"
+    },
+    {
+      "path": "../input"
+    },
+    {
+      "path": "../../tauri-events"
+    },
+    {
+      "path": "../../api"
+    },
+    {
+      "path": "../../icons"
+    },
+    {
+      "path": "../../analytics/google-analytics"
+    },
+    {
+      "path": "../label"
+    },
+    {
+      "path": "../../tauri-api"
+    },
+    {
+      "path": "../button"
+    },
+    {
+      "path": "../modal"
+    },
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "extends": "../../../tsconfig.base.json"
+}
