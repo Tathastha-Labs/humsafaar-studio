@@ -25,6 +25,7 @@ different folder. Add provider keys in **Settings, then API Keys**.
 
 ## Credits and licence
 
-Built on [Humsafaar Studio](https://github.com/humsafaar/studio) by the Humsafaar Studio Team, under the MIT or
-Apache-2.0 licence (`LICENSE-MIT`, `LICENSE-APACHE`). The Humsafaar Studio name and logos are not covered by that
-licence and are not used here. Third-party material is listed in `NOTICE`.
+Humsafaar Studio is based on [ArtCraft](https://github.com/storytold/artcraft) by the ArtCraft Team and
+contributors, and is released under the same terms: the MIT or Apache-2.0 licence (`LICENSE-MIT`,
+`LICENSE-APACHE`). Thank you to everyone who built ArtCraft. The ArtCraft name and logos belong to the
+ArtCraft Team and are not part of this project. Third-party material is listed in `NOTICE`.
