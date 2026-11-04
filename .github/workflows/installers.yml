@@ -1,7 +1,9 @@
 name: Build installers
 
 # Builds Humsafaar Studio installers for macOS, Windows and Linux. Run it from the Actions tab
-# ("Run workflow") or push a tag like v0.42.0. The installers are attached to the run as artifacts.
+# ("Run workflow"), push a tag like v0.42.0, or push code changes to main. The installers are attached
+# to the run as artifacts. Builds from main keep the Rust and npm caches that tag builds restore, so
+# a tag build after a main build is much quicker.
 # They are not code-signed: macOS and Windows will warn on first open until signing is added.
 
 on:
@@ -9,6 +11,14 @@ on:
   push:
     tags:
       - "v*"
+    branches:
+      - main
+    paths:
+      - "crates/**"
+      - "frontend/**"
+      - "Cargo.toml"
+      - "Cargo.lock"
+      - ".github/workflows/installers.yml"
 
 jobs:
   installers:
@@ -41,9 +51,17 @@ jobs:
         with:
           targets: ${{ matrix.rust_targets }}
 
+      # Compiled Rust packages and the Tauri tool, kept per platform between runs.
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.name }}
+          cache-on-failure: true
+
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
 
       - name: Linux system packages
         if: matrix.os == 'ubuntu-22.04'
